@@ -10,6 +10,8 @@
     <meta name="author" content="Free-Template.co" />
     <link rel="shortcut icon" href="ftco-32x32.png">
     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
     <link rel="stylesheet" href="../resources/css/custom-bs.css">
     <link rel="stylesheet" href="../resources/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="../resources/css/bootstrap-select.min.css">

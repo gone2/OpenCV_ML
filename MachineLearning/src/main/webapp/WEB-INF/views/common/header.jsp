@@ -10,6 +10,8 @@
     <meta name="author" content="Free-Template.co" />
     <link rel="shortcut icon" href="ftco-32x32.png">
     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
     <link rel="stylesheet" href="../resources/css/custom-bs.css">
     <link rel="stylesheet" href="../resources/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="../resources/css/bootstrap-select.min.css">
@@ -51,7 +53,7 @@
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="myClass.jsp" class="nav-link active">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li class="has-children">
                 <a href="job-listings.html">Job Listings</a>
@@ -60,18 +62,17 @@
                   <li><a href="post-job.html">Post a Job</a></li>
                 </ul>
               </li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="d-lg-none"><a href="login.jsp">Log In</a></li>
             </ul>
           </nav>
           
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a href="login.jsp" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>LogOut</a>
             </div>
-            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
 
         </div>
       </div>
     </header>
+    
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url('../resources/images/hero_1.jpg');" id="home-section"></section>
