@@ -21,13 +21,16 @@
 	function pythonfile() {
 		alert("aa");
 		$.ajax({
-			url: "/insert",
+			url: "/faceRecognition",
 			type: "POST",
 			dataType: "json",
 			success: function(result) {
 			// ajax 통신 성공 시 로직 수행
 				console.log(result)
-			}
+			},
+			error:function(request,status,error) {
+		    	alert("code = "+ request.status + " message = " + request.responseText + " error = " + error);
+		    }
 		})
 	}
 </script>

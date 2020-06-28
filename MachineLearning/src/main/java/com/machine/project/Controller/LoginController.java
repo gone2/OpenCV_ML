@@ -44,11 +44,11 @@ public class LoginController {
 		return mav;
 	}
 	
-	@RequestMapping(value = "/insert", method = RequestMethod.POST)
+	@RequestMapping(value = "/faceRecognition", method = RequestMethod.POST)
 	public String pythonFile() throws Exception {
 		String result = "";
         
-        Process process = Runtime.getRuntime().exec("python C:\\Users\\jeonjiwon\\Desktop\\Facial-Recognition\\Facial_Recognition_Part3.py");
+        Process process = Runtime.getRuntime().exec("python C:\\Users\\jeonjiwon\\Desktop\\machine_learning\\facial_recognition3.py");
 
         BufferedReader stb = new BufferedReader(new InputStreamReader(process.getInputStream()));
         BufferedReader ste = new BufferedReader(new InputStreamReader(process.getErrorStream()));
@@ -60,10 +60,9 @@ public class LoginController {
         }
         while ((ste.readLine()) != null) {
             System.out.println("22222222222 :::::::::::: " + stb.readLine());
-            System.out.println("22222222222 :::::::::::: " + stb.ready());
-            System.out.println("22222222222 :::::::::::: " + stb.read());
             result = "fail";
         }
+        System.out.println("result ::::::::: !!!!!!! ::::::::::::: " + result);
         return result;
 	}
 }
